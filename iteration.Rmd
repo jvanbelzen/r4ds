@@ -334,7 +334,7 @@ However, it is good to know they exist so that you're prepared for problems wher
 ### Exercises
 
 1.  Imagine you have a directory full of CSV files that you want to read in.
-    You have their paths in a vector, `files <- dir("data/", pattern = "\\.csv$", full.names = TRUE)`, and now want to read each one with `read_csv()`.
+    You have their paths in a vector, `files <- dir("/path/to/data", pattern = "\\.csv$", full.names = TRUE)`, and now want to read each one with `read_csv()`.
     Write the for loop that will load them into a single data frame.
 
 2.  What happens if you use `for (nm in names(x))` and `x` has no names?
